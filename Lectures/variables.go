@@ -1,47 +1,36 @@
-//Summary:
-//  Print basic information to the terminal using various variable
-//  creation techniques. The information may be printed using any
-//  formatting you like.
-//
-//Requirements:
-//* Store your favorite color in a variable using the `var` keyword
-//* Store your birth year and age (in years) in two variables using
-//  compound assignment
-//* Store your first & last initials in two variables using block assignment
-//* Declare (but don't assign!) a variable for your age (in days),
-//  then assign it on the next line by multiplying 365 with the age
-// 	variable created earlier
-//
-//Notes:
-//* Use fmt.Println() to print out information
-//* Basic math operations are:
-//    Subtraction    -
-// 	  Addition       +
-// 	  Multiplication *
-// 	  Division       /
-
 package main
 
 import "fmt"
 
 func main() {
-	var color = "Plum"
-	fmt.Println("Fav color :", color)
+	var myName = "Vishwa"
+	fmt.Println("My name is", myName)
 
-	birthYear, age := 2001, 21
-	fmt.Println("My Birthyear :", birthYear)
-	fmt.Println("My age :", age)
+	var name string = "Klaus"
+	fmt.Println("name =", name)
+
+	userName := "mrjindoblu"
+	fmt.Println("userName =", userName)
+
+	var sum int
+	fmt.Println("The sum is ", sum)
+
+	part1, other := 1,5
+	fmt.Println("part1 is", part1,"Other is ", other)
+
+	part2, other := 2,5
+	fmt.Println("part2 is", part2,"Other is ", other)
+
+	sum = part1 + part2
+	fmt.Println("sum is", sum)
 
 	var (
-		firstInitial = "V"
-		lastInitial  = "A"
-	)
-	fmt.Println("My First Initial :", firstInitial)
-	fmt.Println("My Last Initial :", lastInitial)
+		lessonName = "Variables"
+		lessonType = "Demo"
+		)
+	fmt.Println("lesson Name is", lessonName)
+	fmt.Println("lesson Type is", lessonType)
 
-	var ageInDays int
-	fmt.Println("My age in days:", ageInDays)
-
-	ageInDays = age * 365
-	fmt.Println("My age in days:", ageInDays)
+	word1,word2, _ := "Hello","World","!"
+	fmt.Println(word1,word2)
 }
