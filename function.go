@@ -1,6 +1,12 @@
+package main
 
-func sum(lhs,rhs int) int {
+import "fmt"
+
+func sum(lhs, rhs int) int {
 	return lhs + rhs
 }
 
-result := sum(2, 2)
+func main() {
+	result := sum(2, 2)
+	fmt.Println(result)
+}

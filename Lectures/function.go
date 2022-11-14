@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func double(x int) int{
-	return x+x
+func double(x int) int {
+	return x + x
 }
 
-func add(lhs,rhs int) int{
+func add(lhs, rhs int) int {
 	return lhs + rhs
 }
 
@@ -17,11 +17,11 @@ func greet() {
 func main() {
 	greet()
 	dozen := double(6)
-	fmt.Println("A dozen is",dozen)
+	fmt.Println("A dozen is", dozen)
 
-	bakersDozen := add(dozen,1)
-	fmt.Println("A Baker's dozen is",bakersDozen)
+	bakersDozen := add(dozen, 1)
+	fmt.Println("A Baker's dozen is", bakersDozen)
 
-	anotherBakersDozen := add(double(6),1)
-	fmt.Println("Another Baker's dozeń is ",anotherBakersDozen)
+	anotherBakersDozen := add(double(6), 1)
+	fmt.Println("Another Baker's dozeń is ", anotherBakersDozen)
 }
