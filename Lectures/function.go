@@ -9,7 +9,9 @@ func double(x int) int {
 func add(lhs, rhs int) int {
 	return lhs + rhs
 }
-
+func sub(a, b, c int) int {
+	return add(a, b) - c
+}
 func greet() {
 	fmt.Println("Hello !! from greet function")
 }
@@ -24,4 +26,5 @@ func main() {
 
 	anotherBakersDozen := add(double(6), 1)
 	fmt.Println("Another Baker's dozeń is ", anotherBakersDozen)
+	fmt.Println("Sub function:", sub(5, 5, 5))
 }
